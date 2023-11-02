@@ -36742,7 +36742,7 @@ async function run() {
           description: core.getInput('description') || process.argv[6],
           body: core.getInput('body') || process.argv[7],
           comments: [], // for now
-          commit_id: core.getInput('commit'),
+          commit_id: core.getInput('commit') || github?.context?.payload?.sha,
           event: core.getInput('event')
         },
       })
