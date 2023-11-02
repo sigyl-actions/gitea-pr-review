@@ -12,8 +12,6 @@ inputs:
     description: SHA of the commit
   event:
     description: APPROVED|PENDING|COMMENT|REQUEST_CHANGES|REQUEST_REVIEW|""
-  description:
-    description: comment description
   body:
     description: comment body
   token:
